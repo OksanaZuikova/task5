@@ -1,62 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <style>
-      h1 {
-        text-align: center;
-        font-size: 40px;
-        margin-top: 60px;
-      }
-      p {
-        text-align: center;
-        font-size: 24px;
-      }
-      .flex {
-        display: flex;
-        justify-content: center;
-      }
-      button {
-        width: 50px;
-        margin: 0 30px;
-      }
-      .time {
-        margin: 10px 20px;
-      }
-      #start {
-        background: green;
-        color: white;
-        margin: 30px auto;
-        display: block;
-        width: 70px;
-        height: 30px;
-      }
-      #start:hover {
-        opacity: 0.9;
-      }
-      .none {
-        display: none;
-      }
-    </style>
-    <h1>Timer</h1>
-    <div id="first">
-      <p>Укажите время в минутах</p>
-      <div class="flex">
-        <button id="minus">-</button>
-        <p class="time" id="number">5</p>
-        <button id="plus">+</button>
-      </div>
-      <button id="start">Start</button>
-    </div>
-    <div id="second" class="none">
-      <p>Осталось</p>
-      <p class="time" id="time"></p>
-    </div>
-    <script src="bundle.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <style>
+            h1 {
+                text-align: center;
+                font-size: 40px;
+                margin-top: 60px;
+            }
+            p {
+                text-align: center;
+                font-size: 24px;
+            }
+            .flex {
+                display: flex;
+                justify-content: center;
+            }
+            button {
+                width: 50px;
+                margin: 0 30px;
+            }
+            .time {
+                margin: 10px 20px;
+            }
+            #start {
+                background: green;
+                color: white;
+                margin: 30px auto;
+                display: block;
+                width: 70px;
+                height: 30px;
+            }
+            #start:hover {
+                opacity: 0.9;
+            }
+            .none {
+                display: none;
+            }
+        </style>
+        <h1>Timer</h1>
+        <div id="first">
+            <p>Укажите время в минутах</p>
+            <div class="flex">
+                <button id="minus">-</button>
+                <p class="time" id="number">5</p>
+                <button id="plus">+</button>
+            </div>
+            <button id="start">Start</button>
+        </div>
+        <div id="second" class="none">
+            <p>Осталось</p>
+            <p class="time" id="time"></p>
+        </div>
+        <script src="bundle.js"></script>
+    </body>
 </html>
