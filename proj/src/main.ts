@@ -25,7 +25,7 @@ startButton.addEventListener('click', startTimer)
 function startTimer() {
     document.getElementById('first').classList.add('none')
     document.getElementById('second').classList.remove('none')
-    const now = moment()
+    let now = moment()
     const endTimer = moment(moment().add(+num, 'minutes'))
 
     let duration = moment.duration(endTimer.diff(now), 'milliseconds')
