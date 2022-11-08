@@ -5,9 +5,7 @@
     "main": "./dist/main.js",
     "scripts": {
         "test": "test",
-        "prepare": "husky install",
-        "lint": "eslint .",
-        "lint:fix": "eslint . --fix"
+        "prepare": "husky install"
     },
     "repository": {
         "type": "git",
@@ -51,7 +49,12 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "npm run lint"
+            "pre-commit": "lint-staged"
         }
+    },
+    "lint-staged": {
+        "src/**/*.{js,ts}": [
+            "eslint ."
+        ]
     }
 }
