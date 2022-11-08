@@ -19,13 +19,13 @@ function increaseTimer() {
     numberElement.innerHTML = '' + num
 }
 
-const startButton = document.getElementById('start')
+let startButton = document.getElementById('start')
 startButton.addEventListener('click', startTimer)
 
 function startTimer() {
     document.getElementById('first').classList.add('none')
     document.getElementById('second').classList.remove('none')
-    let now = moment()
+    const now = moment()
     const endTimer = moment(moment().add(+num, 'minutes'))
 
     let duration = moment.duration(endTimer.diff(now), 'milliseconds')
